@@ -68,6 +68,7 @@ defmodule BlockScout.Mixfile do
   defp deps do
     [
       {:absinthe_plug, git: "https://github.com/blockscout/absinthe_plug.git", tag: "1.5.3", override: true},
+      {:rustler, git: "git://github.com/rusterlium/rustler.git", branch: "master", sparse: "rustler_mix", override: true},
       {:tesla, "~> 1.3.3"},
       # Documentation
       {:ex_doc, "~> 0.19.0", only: [:dev]},
