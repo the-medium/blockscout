@@ -113,6 +113,7 @@ defmodule BlockScoutWeb.Mixfile do
       # OS process metrics for Prometheus
       {:prometheus_process_collector, "~> 1.3"},
       {:qrcode, "~> 0.1.0"},
+      {:rustler, git: "git://github.com/rusterlium/rustler.git", branch: "master", sparse: "rustler_mix", override: true},
       {:sobelow, ">= 0.7.0", only: [:dev, :test], runtime: false},
       # Tracing
       {:spandex, "~> 3.0"},
